@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+   
+}
+.header{
+    z-index: 1;
+   justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    background: ;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.burger-menu {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: none; /* Изначально скрыто */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+
+.nav-menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.close-btn {
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: right;
+}
+
+.banner {
+    position: relative;
+    
+    height: 300px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.slider {
+    margin-top: ;
+}
+
+.slide {
+    display: none; /* Изменено для слайдера */
+    text-align: center;
+}
+
+.slide.active {
+    display: block; /* Показ активного слайда */
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+    text-align: center;
+    background-color: white;
+}
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.about-us, .faq, footer {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+}
+
+.faq-item {
+    margin: 10px 0;
+}
+
+.faq-question {
+    cursor: pointer;
+    background-color: #e9e9e9;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
